@@ -125,7 +125,7 @@ header .menu_side .menu_song li{
 }
  
 header .menu_side .menu_song li:hover{
-    background: rgb(105, 105, 105, .1);
+    background: rgb(105, 105, 170, .1);
 }
 
 header .menu_side .menu_song li span{
@@ -135,20 +135,36 @@ header .menu_side .menu_song li span{
 }
 
 header .menu_side .menu_song li img{
-    width: 32px;
-    height: 32px;
-    margin-left: 25px;
+    --s:32px;
+    --b:2px;
+    --g:4px;
+    --c:#ffff;
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset:calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+header .menu_side .menu_song li img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+header .menu_side .menu_song li img{
+    border-radius: 50%;
+}
 
 header .menu_side .menu_song li h5{
     font-size: 11px;
     margin-left: 15px;
-    width: 170px;
+   /* width: 170px;
     border: 1px solid #fff;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap;*/
 }
 
 header .menu_side .menu_song li h5 .subtitle{
@@ -159,4 +175,7 @@ header .menu_side .menu_song li h5 .subtitle{
 header .menu_side .menu_song li .bi{ 
     position: absolute;
     right: 15px;
+    top: 6px;
+    font-size: 16px;
+
 }
