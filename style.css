@@ -311,10 +311,10 @@ header .master_play .bar  .dot{
     border-radius: 50%;
     left: 0%;
     top: -1px;
-    transition: 1s linear ;
+    transition: 1s linear;
 }
 
-header .master_play .bar  .dot::before{
+header .master_play .bar .dot::before{
     content: '';
     position: absolute;
     width: 15px;
@@ -326,7 +326,7 @@ header .master_play .bar  .dot::before{
     box-shadow:inset 0px 0px 3px #36e2ec;
 }
 
-header .master_play .bar  .bar input{
+header .master_play .bar input {
     position: absolute;
     width: 100%;
     top: -6px;
@@ -335,5 +335,4 @@ header .master_play .bar  .bar input{
     z-index: 99999999;
     transition: 3s linear;
     opacity: 0;
-    
 }
