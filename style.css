@@ -196,7 +196,7 @@ header .master_play .wave{
     margin-left: 10px;
 }
 
-header .master_play .wave1{
+header .master_play .wave .wave1{
     width: 3px;
     height: 10px;
     margin-right: 3px;
@@ -205,12 +205,12 @@ header .master_play .wave1{
     animation: unset;
  }
 
-header .master_play .wave1:nth-child(2) {
-    height: 8px;
+header .master_play .wave .wave1:nth-child(2) {
+    height: 13px;
     /*animation-delay: .4s;*/
 }
 
-header .master_play .wave1:nth-child(3) {
+header .master_play .wave .wave1:nth-child(3) {
     height: 8px;
     /*animation-delay: .8s;*/
 }
@@ -227,7 +227,7 @@ header .master_play .active2 .wave1:nth-child(3) {
 }
 
 @keyframes wave {
-    10%{
+    0%{
        height: 10px;
     }
     50%{
@@ -283,7 +283,7 @@ header .master_play span {
     font-weight: 400;
 }
 
-header .master_play #cuurentStart {
+header .master_play #currentStart {
     margin: 0px 0px 0px 20px;
 }
 
@@ -373,7 +373,7 @@ header .master_play .vol  .vol_bar {
     top: 0;
 }
 
-header .master_play .vol  .vol_dot{
+header .master_play .vol .dot{
     position: absolute;
     width: 5px;
     height: 5px;
@@ -384,7 +384,7 @@ header .master_play .vol  .vol_dot{
     transition: 1s linear;
 }
 
-header .master_play .vol .vol_dot::before{
+header .master_play .vol .dot::before{
     content: '';
     position: absolute;
     width: 15px;
